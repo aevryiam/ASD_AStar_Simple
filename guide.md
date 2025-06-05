@@ -39,12 +39,12 @@ make
 
 #### Using Batch File (Windows)
 ```batch
-compile_and_run.bat
+run.bat
 ```
 
 #### Manual Compilation
 ```bash
-g++ -std=c++11 -Wall -Wextra -O2 -o graph_astar.exe graph_astar.cpp
+g++ -std=c++11 -Wall -Wextra -O2 -o graph_astar.exe main.cpp
 ```
 
 ### Running the Program

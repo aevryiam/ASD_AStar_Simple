@@ -74,7 +74,7 @@ The A* algorithm considers both the actual distance (edge weights)
 and the heuristic (Euclidean distance) to find the optimal path.
 */
 
-#include "graph_astar.cpp"
+#include "main.cpp"
 
 // This file serves as documentation for the visualization features
-// Run the main graph_astar.cpp program to use the interactive interface
+// Run the main main.cpp program to use the interactive interface

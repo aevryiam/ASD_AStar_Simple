@@ -10,7 +10,7 @@ CXXFLAGS = -std=c++11 -Wall -Wextra -O2
 TARGET = graph_astar
 
 # Source files
-SOURCES = graph_astar.cpp
+SOURCES = main.cpp
 
 # Default target
 all: $(TARGET)

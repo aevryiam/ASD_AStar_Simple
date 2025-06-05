@@ -508,6 +508,37 @@ private:
     }
 };
 
+// Function to create a sample graph with 6 nodes and various weights
+void createSampleGraph(Graph& graph) {
+    cout << "\nCreating sample graph with 6 nodes..." << endl;
+    
+    // Clear existing graph (add a method to clear if needed)
+    // For now, we'll just add to existing graph
+    
+    // Add nodes with coordinates for visualization
+    graph.addNode("A", 5, 8);   // Top-left area
+    graph.addNode("B", 15, 9);  // Top-center
+    graph.addNode("C", 25, 7);  // Top-right
+    graph.addNode("D", 8, 4);   // Bottom-left
+    graph.addNode("E", 18, 3);  // Bottom-center  
+    graph.addNode("F", 28, 5);  // Bottom-right
+    
+    // Add edges with various weights
+    graph.addEdge("A", "B", 4.5);  // A->B
+    graph.addEdge("A", "D", 2.0);  // A->D (short distance)
+    graph.addEdge("B", "C", 3.2);  // B->C
+    graph.addEdge("B", "E", 2.8);  // B->E
+    graph.addEdge("C", "F", 3.0);  // C->F
+    graph.addEdge("D", "E", 5.5);  // D->E (longer path)
+    graph.addEdge("E", "F", 4.2);  // E->F
+    graph.addEdge("A", "C", 8.5);  // A->C (direct but expensive)
+    graph.addEdge("D", "F", 7.8);  // D->F (long diagonal)
+    
+    cout << "Sample graph created successfully!" << endl;
+    cout << "Nodes: A, B, C, D, E, F" << endl;
+    cout << "Try visualizing the graph or finding paths between nodes!" << endl;
+}
+
 // Function to display menu
 void displayMenu() {
     cout << "\n======= GRAPH & A* PATHFINDER =======" << endl;
@@ -516,7 +547,8 @@ void displayMenu() {
     cout << "3. Display Graph (Text)" << endl;
     cout << "4. Visualize Graph (ASCII)" << endl;
     cout << "5. Find Shortest Path (A*)" << endl;
-    cout << "6. Exit" << endl;
+    cout << "6. Create Sample Graph" << endl;
+    cout << "7. Exit" << endl;
     cout << "====================================" << endl;
     cout << "Choose an option: ";
 }
@@ -634,8 +666,12 @@ int main() {
                 
                 graph.displayAStarResult(start, goal);
                 break;
+            }            case 6: {
+                createSampleGraph(graph);
+                break;
             }
-              case 6: {
+            
+            case 7: {
                 cout << "Thank you for using Graph & A* Pathfinder!" << endl;
                 return 0;
             }

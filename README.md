@@ -22,7 +22,7 @@ make
 
 ### Manual Compilation
 ```bash
-g++ -std=c++11 -Wall -Wextra -O2 -o graph_astar graph_astar.cpp
+g++ -std=c++11 -Wall -Wextra -O2 -o graph_astar main.cpp
 ```
 
 ## How to Run
@@ -131,4 +131,4 @@ Result: A -(3)-> D -(3)-> C (Total cost: 6)
 
 ## Complete Guides
 
-- [Complete Guide](complete_guide.md)
+- [Complete Guide](guide.md)
