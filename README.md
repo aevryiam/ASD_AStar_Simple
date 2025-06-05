@@ -128,3 +128,7 @@ Result: A -(3)-> D -(3)-> C (Total cost: 6)
 - Weights should be positive numbers
 - Node names are case-sensitive
 - Maximum path length is limited by available memory
+
+## Complete Guides
+
+- [Complete Guide](complete_guide.md)
